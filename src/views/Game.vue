@@ -185,12 +185,9 @@ function animation() {
   ctx.save();
   ctx.fillStyle = bricks;
   ctx.font = " bold 80px/80px Georgia";
-  let t1 = "按Q准备射击";
-  let t2 = "鼠标左键发射";
+  let t1 = "项目施工中...";
   let w1 = ctx.measureText(t1).width;
-  let w2 = ctx.measureText(t2).width;
-  ctx.fillText("按Q准备射击", (innerWidth - w1) / 2, 100);
-  ctx.fillText("鼠标左键发射", (innerWidth - w2) / 2, 200);
+  ctx.fillText(t1, (innerWidth - w1) / 2, 200);
   ctx.restore();
   mouse.draw(ctx);
   tankList.forEach((t) => {
