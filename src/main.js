@@ -7,9 +7,6 @@ import VueAxios from "vue-axios";
 import store from "./stores/store";
 import { useStore } from "@/stores/index.js";
 import * as ElementPlusIconsVue from "@element-plus/icons-vue";
-import { useRegisterSW } from "virtual:pwa-register/vue";
-
-useRegisterSW();
 
 const app = createApp(App);
 //el-icon
